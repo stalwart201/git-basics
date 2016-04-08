@@ -54,6 +54,11 @@
 						A distributed revision control and source code management system with an emphasis on speed. Git was initially designed and developed by Linus Torvalds for Linux kernel development. Git is a free software distributed under the terms of the GNU General Public License version 2.
 					</p>
 
+
+				</section>
+				
+				<section>	
+
 					<h3>HISTORY OF GIT</h3>
 					<P>
 					   Git development began in April 2005, after many developers of the Linux kernel gave up access to BitKeeper, a proprietary source control management (SCM) system that they had previously used to maintain the project.[11] The copyright holder of BitKeeper, Larry McVoy, had withdrawn gratis use of the product after claiming that Andrew Tridgell had reverse-engineered the BitKeeper protocols
@@ -65,9 +70,12 @@
 				<section>
 					<h2>what a VCS is?</h2>
 					<p>
-					    Allows developers to work simultaneously.
-                        Does not allow overwriting each other’s changes.
-                        Maintains a history of every version.
+					<ul>
+					    <li>Allows developers to work simultaneously.</li> 
+                        <li>Does not allow overwriting each other’s changes.</li> 
+                        <li>Maintains a history of every version.</li> 
+                    </ul>
+
                     </p>
 				</section>
 
@@ -81,10 +89,11 @@
                 <section>
 					<h2>Why Git?</h2>
 					<p>
-					    -You can use git even when you're offline.
-					    -Create branches, work locally, isolate your work and merge seamlessly.
-					    -It takes snapshots of changes and treat files as stream of snapshots over time.
-					    -Code revisions (commit) that you made would be available to only you locally unless you push to remote repo.  
+					<ul>
+					    <li>You can use git even when you're offline.</li> 
+					    <li>Create branches, work locally, isolate your work and merge seamlessly.</li> 
+					    <li>Code revisions (commit) that you made would be available to only you locally unless you push to remote repo. </li> 
+					</ul> 
                     </p>
                 </section>
 
@@ -98,13 +107,10 @@
                 <section>
                 	<h2>Differnce between Git and Github</h2>
                 	<p>
-                		Git is the distributed version control system. Git is responsible for keeping track of changes to content (usually source code files), and it provides mechanisms for sharing that content with others.
-
-                        GitHub is a company that provides Git repository hosting. If your team has a shared repository on GitHub, you could conceivably use GitHub without ever looking at its website. But, the website provides a lot of value on top of the core Git repository.
- 
-                        Concepts from Git: Repositories, branches, remotes, committing, pushing, pulling, merging, rebasing, reverting, and cherry-picking.
-
-                        Concepts from GitHub: Pull requests, issues, wikis, forking someone else's repository, Gists, github.com.
+                	<ul>
+                		<li>Git is the distributed version control system. Git is responsible for keeping track of changes to content (usually source code files), and it provides mechanisms for sharing that content with others.</li> 
+                        <li>GitHub is a company that provides Git repository hosting. If your team has a shared repository on GitHub, you could conceivably use GitHub without ever looking at its website. But, the website provides a lot of value on top of the core Git repository.</li> 
+                    </ul>
                     </p>
                 </section>
 
@@ -112,61 +118,98 @@
                 	<h2>Installing git on Linux</h2>
 
                     <p>
-                       For Fedora users:
+                    <ul>
+                       <li>For Fedora users:</li> 
                     <code>
-                       $ sudo yum install git-all
+                       <li>$ sudo yum install git-all</li> 
                     </code>
+                    </ul>
                     </p>
                     
                     <p>
-                    	For Debian users:
-                    </p>
+                    <ul>
+                    	<li>For Debian users:</li> 
+                   
                     <code>
-                    	$ sudo apt-get install git-all
+                    	<li>$ sudo apt-get install git-all</li> 
                     </code>
+                    </ul>
+                     </p>
                 </section>
 
                 <section>
                 	<h2>GIT WORKFLOW</h2>
 
                 	<P>
-                		Obtain repo
-                	<code>git init</code>
-                	<code>git clone</code>
+                	<ul>
+                		<li>Obtain repo</li> 
+                	<code>
+                	    <li>git init</li> 
+                	</code>
+                	<code>
+                	    <li>git clone</li> 
+                	</code>
+                	</ul>
                 	</P>
 
                 	<p>
+                	<ul>
                 	    Create branch
-                    <code>git branch {branch name}</code>
+                    <code>
+                        <li>git branch {branch name}</li> 
+                    </code>
+                    </ul>
                 	</p>
 
                 	<p>
-                	    Switching to other branch
-                    <code>git checkout {branch name} </code>
+                	<ul>
+                	    <li>Switching to other branch</li> 
+                    <code>
+                        <li>git checkout {branch name} </li> 
+                    </code>
+                    </ul>
                     </p>
 
                 	<p>
-                		Make changes
+                	<ul>
+                		<li>Make changes</li> 
+                	</ul>
                 	</p>
 
                 	<p>
-                		stage changes
-                	<code>git add {filename}</code>
+                	<ul>
+                		<li>stage changes</li> 
+                	<code>
+                	    <li>git add {filename}</li> 
+                	</code>
+                	</ul>
                 	</p>
 
                 	<p>
-                	   Commit Changes
-                    <code>git commit -m “Commit message”</code>
+                	<ul>
+                	   <li>Commit Changes</li> 
+                    <code>
+                        <li>git commit -m “Commit message”</li> 
+                    </code>
+                    </ul>
                     </p>
 
                     <p>
-                    	Merging
-                    <code>git merge origin/master</code>
+                    <ul>
+                    	<li> Merging</li>
+                    <code>
+                        <li>git merge origin/master</li> 
+                    </code>
+                    </ul>
                     </p>
 
                     <p>
-                        Push Changes to Remote Repo
-                    <code>git push {remote_name} {repo_name}</code>
+                    <ul>
+                        <li>Push Changes to Remote Repo</li> 
+                    <code>
+                        <li>git push {remote_name} {repo_name}</li> 
+                    </code>
+                    </ul>
                     </p>
                 </section>
 
@@ -174,9 +217,11 @@
                 <section>
                 	<h2>Git help</h2>
                 	<code>
-                	   $ git help &lt;verb&gt;
-                       $ git &lt;verb&gt; --help
-                       $ man git-&lt;verb&gt;	
+                	<ul>
+                	   <li>$ git help &lt;verb&gt;</li> 
+                       <li>$ git &lt;verb&gt; --help</li> 
+                       <li>$ man git-&lt;verb&gt;</li> 	
+                    </ul>
                     </code>
                 </section>
 
