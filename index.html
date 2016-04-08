@@ -109,6 +109,219 @@
                     </p>
                 </section>
 
+                <section>
+                	<h2>Installing git on Linux</h2>
+
+                    <p>
+                       If you want to install the basic Git tools on Linux via a binary installer, you can generally do so through the basic package-management tool that comes with your distribution. If you’re on Fedora for example, you can use yum:
+                    <code>
+                       $ sudo yum install git-all
+                    </code>
+                    </p>
+                    
+                    <p>
+                    	If you’re on a Debian-based distribution like Ubuntu, try apt-get:
+                    </p>
+                    <code>
+                    	$ sudo apt-get install git-all
+                    </code>
+                </section>
+
+                <section>
+                	<h2>Setting up git via ssh</h2>
+                    <p>
+                    	SSH keys are a way to identify trusted computers without involving passwords. You can generate an SSH key and add the public key to your GitHub account by following the procedures outlined in this section.
+                    </p>
+
+                	<h3>Checking for existing SSH keys</h3>
+                	<p>
+
+
+
+                	</p>
+
+                	<h3>Generating a new SSH key and adding it to the ssh-agent</h3>
+                    <p>
+                    	
+
+
+                    </p>
+
+                   <h3>Adding a new SSH key to your GitHub account</h3>
+                   <p>
+                   	
+
+
+                   </p>
+
+                   <h3>Testing your SSH connection</h3>
+                   <p>
+                   	
+
+
+                   </p>
+                </section>
+
+
+                <section>
+                	<h2>Git help</h2>
+
+                	<p>
+                	   If you ever need help while using Git, there are three ways to get the manual page (manpage) help for any of the Git commands:
+
+                	<code>
+                	   $ git help &lt;verb&gt;
+                       $ git &lt;verb&gt; --help
+                       $ man git-&lt;verb&gt;	
+                    </code>
+                	</p>
+
+
+                </section>
+
+                <section>
+                	<h2>Basic git commands</h2>
+
+                    <h3>Create a new local repository </h3>
+                    	
+                    <p>	
+                    <code>
+                    	git init
+                    </code>
+                    </p>
+
+                    <h3>Check out a repository</h3>
+
+                    <p>
+                    	Create a working copy of a local repository:
+                    <code>
+                    	git clone /path/to/repository
+                    </code>
+                    </p>
+
+                    <p>
+                    	For a remote server, use:
+                    <code>
+                    	git clone username@host:/path/to/repositor
+                    </code>
+                    </p>
+                     
+                    <h3>Add files</h3>
+
+                    <code>
+                       git add <filename>
+                    </code>
+
+                    <h3>Commit</h3>
+                    <p>
+                    	Commit changes to head (but not yet to the remote repository):
+                    <code>
+                    	git commit -m "Commit message"
+                    </code>
+                    </p>
+
+                    <p>Commit any files you've added with git add, and also commit any files you've changed since then:
+                    <code>
+                       	git commit -a
+                    </code>
+                    </p>
+
+                    <h3>Push</h3>
+                    <p>Send changes to the master branch of your remote repository:
+                    <code>
+                    	git push origin master
+                    </code>
+                    </p>
+
+                    <h3>Status</h3>
+                    <p>List the files you've changed and those you still need to add or commit:
+                    <code>git status</code>
+                    </p>
+
+                    <h3>Connect to a remote repository</h3>
+                    <p>If you haven't connected your local repository to a remote server, add the server to be able to push to it:
+                    <code>
+                    	git remote add origin <server>
+                    </code>
+                    </p>
+
+                    <p>List all currently configured remote repositories:
+                    <code>
+                    	git remote -v
+                    </code>
+                    </p>
+
+                    <h3>Branches</h3>
+                    
+                    <p>Create a new branch and switch to it:
+                    <code>
+                    	git checkout -b <branchname>
+                    </code>
+                    </p>
+
+                    <p>Switch from one branch to another:
+                    <code>
+                    	git checkout <branchname>
+                    </code>
+                    </p>
+
+                    <p>List all the branches in your repo, and also tell you what branch you're currently in:
+                    <code>
+                    	git branch
+                    </code>
+                    </p>
+
+                    <p>Delete the feature branch:
+                    <code>
+                    	git branch -d <branchname>
+                    </code>
+                    </p>
+
+                    <p>Push the branch to your remote repository, so others can use it:
+                    <code>
+                    	git push origin <branchname>
+                    </code>
+                    </p>
+
+                    <p>Push all branches to your remote repository:
+                    <code>
+                        git push --all origin
+                    </code>
+                    </p>
+                    
+                    <p>Delete a branch on your remote repository:
+                    <code>
+                    	git push origin :<branchname>
+                    </code>
+                    </p>
+
+                    <h3>Update from the remote repository</h3>
+
+                    <p>Fetch and merge changes on the remote server to your working directory:
+                    <code>
+                    	git pull
+                    </code>
+                    </p>
+
+                    <p>To merge a different branch into your active branch:
+                    <code>
+                    	git merge <branchname>
+                    </code>
+                    </p>
+                    
+                    <p>After you have manually resolved any conflicts, you mark the changed file:
+                    <code>
+                    	git add <filename>
+                    </code>
+                    </p>
+                    </section>
+
+                <section>
+                   <h2>Places where you can easily learn,how to work on git</h2>
+
+                   <p></p>
+                </section>
+
 				
 
 				
